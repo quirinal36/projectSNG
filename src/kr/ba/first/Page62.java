@@ -1,16 +1,11 @@
 package kr.ba.first;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Page62 {
 
 	public static void main(String[] args) {
-		int A;
-		System.out.print("A 를 입력하세요: ");
-		Scanner in = new Scanner(System.in);
-		
-		A = in.nextInt();
-		in.close();
+		int A = Integer.parseInt(JOptionPane.showInputDialog("입력"));;
 		
 		int HAP = 0;
 		int K = 2;

@@ -10,28 +10,39 @@ public class Page64 {
 			A[K-2] = K;
 		}
 		
-		int i = 0;
+		int i = -1;
 		int J = 0;
+		int M = 0;
 		
-		while(i < 99) {
+		while(true) {
 			i = i + 1;
-			System.out.println("i: " + i);
 			
-			if(A[i-1] != 0) {
+			if(i == 99) {
+				//소수갯수 모두 확인 반복문 종
+				System.out.println(J);
+				break;
+			}else if(A[i] == 0){
+				// 소수가 아님, 다음 작업 
+				continue;
+			}else {
+				// 
 				J = J + 1;
-				int M = i;
+				M = i;
 				
-				while(M < 99) {
-					M = M + i;
-					System.out.println("M : " + M);
+				while(true) {
+					M = M + A[i];
+					if(M > 99) {
+						break;
+					}
 					A[M] = 0;
-					
 				}
 			}
+			
+			
 		}
 		for(int a : A) {
 			System.out.print(a +" ");
 		}
-		System.out.println("\nJ: " + J);
+//		System.out.println("\nJ: " + J);
 	}
 }
