@@ -11,12 +11,12 @@ public class Page37 {
 	public static void main(String[] args) {
 		int i = 0;
 		int J = 1;
-		int K = 1;
+		int K = 0;
 		for(i=0; i < 20; i++) {
 			J = J + i;
 			K = K + J;
-			System.out.print(J + "+");
+			System.out.format("i:%4d |J:%4d | K:%4d\n",i,J,K);
 		}
-		System.out.print("=" + K);
+		System.out.format("K = %4d" , K);
 	}
 }

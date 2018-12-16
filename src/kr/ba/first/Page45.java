@@ -11,6 +11,8 @@ public class Page45 {
 			int C = A + B;
 			HAP = HAP + C;
 			CNT = CNT + 1;
+			
+			System.out.println("a: " + A + "/ b: " +B +" /c: " + C +" /cnt: " + CNT +" /hap: " + HAP);
 			if(CNT == 20) {
 				break;
 			}

@@ -15,7 +15,7 @@ public class Page56 {
 		int J = 2;
 		
 		while(J <= i) {
-			System.out.println("J: " + J);
+			System.out.println("i: " + i + " /J: " + J);
 			if(A % J == 0) {
 				System.out.println("소수아님");
 				return;
