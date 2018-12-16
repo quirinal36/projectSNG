@@ -2,6 +2,12 @@ package kr.ba.first;
 
 import javax.swing.JOptionPane;
 
+/**
+ * 10진수를 2진수로 변환하여 출력하는 프로그램
+ * 
+ * @author leehg
+ *
+ */
 public class Page72 {
 	public static void main(String[] args) {
 		int A[] = new int[10];
